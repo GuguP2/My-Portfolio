@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0", minimum-scale=1.0, maximum-scale=1.0, user-scalable=no>
+  <link rel="stylesheet" href="personal.css">
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=card_membership" />
+  <title>Personal Porfolio Website</title>
+</head>
+<body>
+    
+<header>
+    <nav class="nav-menu">
+      <ul class="nav-links">
+        <li class="hideSidebar"><a href="index.html">Home</a></li>
+        <li class="hideSidebar"><a href="projects.html">Projects</a></li>
+        <li onclick="showSideBar()" id="sideBtn">
+          <a href="#menu"
+            ><p>Menu</p>
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 50 50">
+              <path d="M 0 9 L 0 11 L 50 11 L 50 9 Z M 0 24 L 0 26 L 50 26 L 50 24 Z M 0 39 L 0 41 L 50 41 L 50 39 Z"></path></svg>
+            </a>
+        </li></ul>
+        <!--contact icons-->
+        <div id="icons">
+       <a href="https://www.linkedin.com/in/gugu-pocia-mthethwa-179223121/" target="_blank">
+        <img src="https://img.icons8.com/color/48/linkedin.png" alt="linkedin" title="Go to my LinkedIn" />
+     </a>
+     
+      <a href="https://github.com/GuguP2" target="_blank"> 
+        <img src="https://img.icons8.com/fluency/48/github.png" alt="github" title="Go to my GitHub" />
+      </a>
+      <a href="mailto:pociamthethwa@gmail.com" target="_blank">
+      <img src="https://img.icons8.com/color/48/gmail-new.png" alt="gmail-new" title="Go to my Gmail" />
+      </a>
+    </div>
+      
+    </nav>
+
+    <nav class="ham-menu">
+      <ul class="ham-links">
+        <li onclick="hideSideBar()">
+          <a href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              x="0px"
+              y="0px"
+              width="20"
+              height="26"
+              viewBox="0 0 50 50"
+              fill="red"
+            >
+              <path
+                d="M 7.71875 6.28125 L 6.28125 7.71875 L 23.5625 25 L 6.28125 42.28125 L 7.71875 43.71875 L 25 26.4375 L 42.28125 43.71875 L 43.71875 42.28125 L 26.4375 25 L 43.71875 7.71875 L 42.28125 6.28125 L 25 23.5625 Z"
+              ></path>
+            </svg>
+            <p style="margin-top: 5px">Close</p></a
+          >
+        </li>
+        <li><a href="index.html">Home</a></li>
+
+        <li><a href="projects.html">Projects</a></li>
+        
+      </ul>
+      
+    </nav>
+    
+  </header>
+<!--PROJECTS-->
+  <div class="projects1">
+    <h2>Projects</h2>
+    <hr>
+    <div class="projects-list">
+      <div class="nextgen-title">
+         <h3>1. NextGenEd Wireframe</h3>
+        <caption>Team project using figma wireframe</caption>
+<a href="https://www.figma.com/file/1Y2YJ1Yk1Yk1Yk1Yk1Yk1Y/NextGenEd-Wireframe?type=design&node-id=0-1&t=Yk1Yk1Yk1Yk1Yk1Yk1Yk"
+          target="_blank">click here to view -[Figma Wireframe]</a>
+        </div>
+<div class="NextGenEd">
+        <img src="./Personal website images/nextgened.png" frameborder="0" title="Go to nextGenEd app"></img>
+        
+        <p>In my team, I was assigned the role of a UI/IX designer. I was responsible for designing and finalising our
+          wireframe.
+          We wanted to design a platform where educators can come together to teach and learn outside the general
+          classroom setting. This platform is meant to address low litracy in rural and township schools as well as
+          unemployment.</p>
+        
+        </div>
+
+<hr>
+
+        <div class="gym-title"><h3> 2. Gym buddy App</h3>
+        <caption>Individual assignment project</caption>
+      <a href="https://gugumthethwa.github.io/gym-buddy-app/" target="_blank"> click here to view - Gym Buddy App</a>
+    </div>
+<div class="gym-buddy">
+  <p>A project based assignment that is a simple web-based fitness tracker that helps you log workouts, view
+          workout history, and track progress over time.
+          It also integrates with the <a href="https://wger.de/en/software/api" target="_blank">[WGER API]</a> to fetch
+          exercise data.</p>
+        <img src="./Personal website images/gymbuddyapp.png" frameborder="0" title="Go to gym buddy app" width="300px"
+          onclick="zoomImage(this)">
+          </img>
+        
+      </div>
+      </div>
+    </div>
+  
+      
+  <footer>copyright 2025</footer>
+
+  <script src="personal.js"></script>
+</body>

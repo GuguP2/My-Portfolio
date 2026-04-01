@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" minimum-scale="1.0" maximum-scale="1.0" user-scalable="no" />
+    <link rel="stylesheet" href="personal.css" />
+        <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=card_membership"
+    />
+    <title>Personal Porfolio Website</title>
+  </head>
+  <header>
+    <nav class="nav-menu">
+      <ul class="nav-links">
+        <li class="hideSidebar"><a href="index.html">Home</a></li>
+        <li class="hideSidebar"><a href="projects.html">Projects</a></li>
+        <li onclick="showSideBar()" id="sideBtn">
+          <a href="#menu"
+            ><p>Menu</p>
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 50 50">
+              <path d="M 0 9 L 0 11 L 50 11 L 50 9 Z M 0 24 L 0 26 L 50 26 L 50 24 Z M 0 39 L 0 41 L 50 41 L 50 39 Z"></path></svg>
+            </a>
+        </li></ul>
+        <!--contact icons-->
+        <div id="icons">
+       <a href="https://www.linkedin.com/in/gugu-pocia-mthethwa-179223121/" target="_blank">
+        <img src="https://img.icons8.com/color/48/linkedin.png" alt="linkedin" title="Go to my LinkedIn" />
+     </a>
+     
+      <a href="https://github.com/GuguP2" target="_blank"> 
+        <img src="https://img.icons8.com/fluency/48/github.png" alt="github" title="Go to my GitHub" />
+      </a>
+      <a href="mailto:pociamthethwa@gmail.com" target="_blank">
+      <img src="https://img.icons8.com/color/48/gmail-new.png" alt="gmail-new" title="Go to my Gmail" />
+      </a>
+    </div>
+      
+    </nav>
+
+    <nav class="ham-menu">
+      <ul class="ham-links">
+        <li onclick="hideSideBar()">
+          <a href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              x="0px"
+              y="0px"
+              width="20"
+              height="26"
+              viewBox="0 0 50 50"
+              fill="red"
+            >
+              <path
+                d="M 7.71875 6.28125 L 6.28125 7.71875 L 23.5625 25 L 6.28125 42.28125 L 7.71875 43.71875 L 25 26.4375 L 42.28125 43.71875 L 43.71875 42.28125 L 26.4375 25 L 43.71875 7.71875 L 42.28125 6.28125 L 25 23.5625 Z"
+              ></path>
+            </svg>
+            <p style="margin-top: 5px">Close</p></a
+          >
+        </li>
+        <li><a href="index.html">Home</a></li>
+
+        <li><a href="projects.html">Projects</a></li>
+        
+      </ul>
+      
+    </nav>
+    
+  </header>
+
+  <body>
+    <div class="content">
+      <div class="about-me">
+        <h2>Gugu Mthethwa</h2>
+        <p>
+          <strong
+            >Clinical Technologist: Pulmonology | Front-End Web
+            Developer</strong
+          >
+        </p>
+
+        <p>
+          I'm an aspiring software developer with a background in healthcare. I
+          am eager to apply my skills to develop innovative solutions that can
+          make a positive impact on people's lives.<br /><br />
+          I am a quick learner, adaptable, and thrive in collaborative
+          environments where I can contribute my creativity and problem-solving
+          abilities to create meaningful projects.<br /><br />
+        </p>
+
+        <button id="more-btn">More about me...</button>
+      </div>
+      <!-- The custom dialog element -->
+      <dialog id="customDialog">
+        <h2>More about me:</h2>
+        <br />
+        <p>
+          An independent pulmonology clinical technologist with extensive
+          experience in lung function testing and working with advanced
+          diagnostic equipment and software.<br />This background has fostered
+          strong analytical thinking,precision, and problem-solving skills that
+          translate well into software development. <br /><br />Currently
+          studying front-end web development, with a passion for building
+          intuitive, user-friendly applications that create real-world
+          impact.<br /><br />Seeking a junior software developer role to combine
+          healthcare expertise with emerging technical skills, bringing
+          curiosity, creativity, and a strong desire to learn and grow within a
+          collaborative team.
+        </p>
+        <button id="confirmButton">OK</button>
+      </dialog>
+
+      <!--SKILLS-->
+
+      <div class="skills">
+        <!--
+    <div class="skills-list">
+     <ul>
+      <h2>Skills</h2>
+
+      <li style="color: brown;">BTech Clinical Technology - Pulmonology</li>
+      <li><a
+          href="https://www.freecodecamp.org/certification/gugumthethwa/responsive-web-design"
+          target="_blank">Responsive Web Design 📄</a></li>
+      <li><a href="https://savanna.alxafrica.com/certificates/8BFn6X2Y9J"
+          target="_blank">Professionals Foundations 📄</a> </li>
+      <li><a href="https://savanna.alxafrica.com/certificates/fenPx9My57"
+          target="_blank">Front-End Web development 📄</a></li>
+      <li><a href="https://www.freecodecamp.org/certification/gugumthethwa/javascript"
+          target="_blank">JavaScript 📄</a></li>
+    </ul>
+    </div>
+  -->
+        <div class="skills-icon">
+          <figure>
+            <img
+              src="https://img.icons8.com/?size=100&id=11173&format=png&color=000000"
+              alt="degree"
+            />
+            <figcaption>BTech Clinical Technology</figcaption>
+          </figure>
+
+          <figure>
+            <a
+              href="https://savanna.alxafrica.com/certificates/8BFn6X2Y9J"
+              target="_blank"
+            >
+              <img
+                src="https://img.icons8.com/?size=100&id=12016&format=png&color=000000"
+                alt="degree"
+              />
+              <figcaption>ALX Professionals Foundations</figcaption></a
+            >
+          </figure>
+
+          <figure>
+            <a
+              href="https://savanna.alxafrica.com/certificates/fenPx9My57"
+              target="_blank"
+            >
+              <img
+                src="https://img.icons8.com/?size=100&id=12016&format=png&color=000000"
+                alt="degree"
+              />
+              <figcaption>ALX Front-End Web development</figcaption></a
+            >
+          </figure>
+
+          <figure>
+            <a
+              href="https://www.freecodecamp.org/certification/gugumthethwa/responsive-web-design"
+              target="_blank"
+            >
+              <img
+                src="https://img.icons8.com/color/48/html-5--v1.png"
+                alt="html5"
+              /><img
+                src="https://img.icons8.com/color/48/css3.png"
+                alt="css3"
+              />
+              <figcaption>Responsive Web Design</figcaption></a
+            >
+          </figure>
+
+          <figure>
+            <img
+              src="https://img.icons8.com/color/48/javascript--v1.png"
+              alt="javascript"
+            />
+            <figcaption>JavaScript</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+    <!--PROJECTS-->
+    <div class="projects">
+      <h2>Project List</h2>
+      
+      <p>Gym Buddy App | Next Gen Ed App |</p>
+      <div class="projetc-btn">
+        <button id="project-btn">View All Projects</button>
+      </div>
+    </div>
+
+    <footer>copyright 2025</footer>
+
+    <script src="personal.js"></script>
+  </body>
+</html>
